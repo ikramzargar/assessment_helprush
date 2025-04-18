@@ -49,8 +49,9 @@
 
   <h2>📦 Packages Used</h2>
   <ul>
-    <li><strong>flutter_bloc</strong> – State management</li>
-    <li><strong>shimmer</strong> – Skeleton loading animation</li>
+    <li><strong>bloc</strong> – State management</li>
+    <li><strong>flutter_bloc</strong> – Flutter tools for bloc</li>
+    <li><strong>skeletonizer</strong> – Skeleton loading animation</li>
     <li><strong>http</strong> – API calls</li>
     <li><strong>equatable</strong> – For equality in BLoC states and events</li>
   </ul>
@@ -85,11 +86,6 @@ cd flutter-post-app</code></pre>
 └── main.dart             -> App entry, theme, and BLoC setup
 </code></pre>
 
-  <hr>
 
-  <h2>✅ Summary</h2>
-  <p>
-    This app showcases a clean and modular Flutter architecture, using BLoC for state management and best practices for scalable development. It’s designed to be maintainable, testable, and user-friendly.
-  </p>
 </body>
 </html>

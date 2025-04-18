@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>📱 HelpRush Assessment App</h1>
+  <h1>📱 HelpRush Assessment</h1>
   <p>
     A Flutter assessment project demonstrating clean architecture, <strong>SOLID principles</strong>, and state management using the <strong>BLoC pattern</strong>. This app fetches and displays posts from a public API, featuring skeleton loading, error handling, and dynamic theme switching (light/dark).
   </p>

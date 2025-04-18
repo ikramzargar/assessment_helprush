@@ -48,10 +48,10 @@ Watch demo video at https://drive.google.com/file/d/1pgagegm1PfCfrYym26Hzck7zkxJ
       flutter run
 
 ## App Structure
-•	lib/: Contains the Flutter app code.
-•	lib/bloc/: Contains BLoC logic for managing post states and events.
-•	lib/data/models/: Contains data models for the posts.
-•	lib/data/repositories/: Contains the PostRepository responsible for fetching posts.
-•	lib/ui/pages/: Contains screens.
-•	lib/ui/widgets/: Contains the UI components.
-•	main.dart: The entry point of the app, sets up the app’s theme, BLoC, and initial screen.
+-	lib/: Contains the Flutter app code.
+-	lib/bloc/: Contains BLoC logic for managing post states and events.
+-	lib/data/models/: Contains data models for the posts.
+-	lib/data/repositories/: Contains the PostRepository responsible for fetching posts.
+-	lib/ui/pages/: Contains screens.
+-	lib/ui/widgets/: Contains the UI components.
+-	main.dart: The entry point of the app, sets up the app’s theme, BLoC, and initial screen.

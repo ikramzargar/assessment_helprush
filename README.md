@@ -38,14 +38,14 @@ Watch demo video at https://drive.google.com/file/d/1pgagegm1PfCfrYym26Hzck7zkxJ
 
 ## Project Setup
 1.	Clone this repository:
-      git clone <repo-url>
-      cd flutter-post-app
+     '''bash git clone <repo-url>
+      cd flutter-post-app '''
 
 2. 	Install dependencies:
-      flutter pub get
+    '''bash  flutter pub get '''
 
 3.	Run the app on your device or emulator:
-      flutter run
+      '''bash flutter run '''
 
 ## App Structure
 -	lib/: Contains the Flutter app code.

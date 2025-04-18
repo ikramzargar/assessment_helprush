@@ -1,5 +1,5 @@
 import 'package:assessement_helprush/bloc/posts_bloc.dart';
-import 'package:assessement_helprush/pages/home_page.dart';
+import 'package:assessement_helprush/ui/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -11,11 +11,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    final postRepository = PostRepository();
+    final postRepository = PostRepository();// Initialized repository
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.light,
@@ -37,8 +35,8 @@ class MyApp extends StatelessWidget {
         ),
         cardColor: Colors.grey[900],
       ),
-      themeMode: ThemeMode.system,
-      home: BlocProvider(
+      themeMode: ThemeMode.system,// Theme will be set to default system mode whether dark or light
+      home: BlocProvider(// added bloc to the top level widget
         create: (_) => PostBloc(postRepository)..add(FetchPosts()),
         child: const HomePage(),
       ),

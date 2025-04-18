@@ -1,16 +1,51 @@
 # assessement_helprush
 
-Assessement from HelpRush.
+Assessment from HelpRush.
 
-## Getting Started
+## About
+This Flutter app is an assessment from HelpRush demonstrating  the use of clean architecture, SOLID principles, 
+and state management using the BLoC pattern. 
+It fetches posts from a public API and displays them in a list with skeleton loading, 
+error handling, and dynamic theme switching (light/dark).
 
-This project is a starting point for a Flutter application.
+## Features
+1.	Fetch Posts
+•	Fetches posts from jsonplaceholder.typicode.com.
+•	Displays a list of posts with title (bold) and body (subtext).
+2.	State Management
+•	State is managed using BLoC.
+•	Handles three states:
+•	Loading: Shows a skeleton loader.
+•	Loaded: Displays the fetched posts.
+•	Error: Handles error gracefully (e.g., no internet, server error).
+3.	UI Enhancements
+•	Skeleton Loader: A shimmer effect that shows while data is being fetched.
+•	SnackBar: Displays post information on tap.
+•	Pull-to-Refresh: Implemented with RefreshIndicator for a better user experience.
+•	Dark/Light Themes: Supports system-wide dark and light theme switching.
 
-A few resources to get you started if this is your first Flutter project:
+Packages Used
+•	flutter_bloc: For state management using the BLoC pattern.
+•	shimmer: For skeleton loader effect while posts are loading.
+•	http: For fetching data from the API.
+•	equatable: For value equality in BLoC states and events.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Project Setup
+1.	Clone this repository:
+      git clone <repo-url>
+      cd flutter-post-app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. 	Install dependencies:
+      flutter pub get
+
+3.	Run the app on your device or emulator:
+      flutter run
+
+App Structure
+•	lib/: Contains the Flutter app code.
+•	lib/bloc/: Contains BLoC logic for managing post states and events.
+•	lib/data/models/: Contains data models for the posts.
+•	lib/data/repositories/: Contains the PostRepository responsible for fetching posts.
+•	lib/ui/pages/: Contains screens.
+•	lib/ui/widgets/: Contains the UI components.
+•	main.dart: The entry point of the app, sets up the app’s theme, BLoC, and initial screen.

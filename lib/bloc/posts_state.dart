@@ -2,7 +2,7 @@ part of 'posts_bloc.dart';
 
 enum PostStatus { loading, success, failure } // Status for api response
 
-class PostState extends Equatable {
+class PostState extends Equatable {// equatable package to preveny unnecessary rebuilds
   final PostStatus status;
   final List<Post> posts;
   final String? error;

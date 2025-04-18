@@ -21,9 +21,10 @@ class HomePage extends StatelessWidget {
             if (state.status == PostStatus.loading) {
               return const SkeletonLoader(); // Skeleton loader when loading posts
             } else if (state.status == PostStatus.failure) {
+              String errorMessage = state.error?.toString().replaceAll('Exception', '') ?? 'Unknown error';
               return Center(
                   child: Text(
-                      'Error: ${state.error}')); // Show specific error messages
+                      'Error$errorMessage')); // Show specific error messages
             }
             return ListView.separated(
               padding: const EdgeInsets.all(8),
